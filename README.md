@@ -6,7 +6,10 @@ A lightweight Spring Boot REST API service for authentication and transaction op
 
 1. **Access Token**
    - **POST /api/v1/token**
-   - Request body: `{ "clientKey": "...", "clientSecret": "..." }`
+   - Request body: `{
+            "clientKey": "kcb_key",
+            "clientSecret": "qwerty1234"
+        }`
    - Response: Returns an `access_token`, `refresh_token`, and client info.
 
 2. **Refresh Token**
@@ -34,3 +37,12 @@ A lightweight Spring Boot REST API service for authentication and transaction op
 5. **Repost**
    - **GET /api/v1/payments/report**
    - Response: Pulls list of transactions
+
+
+### Using Maven
+1. Build:
+   ```bash
+   mvn clean package
+
+
+   java -jar target/kcb-payment-service.jar

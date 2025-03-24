@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.kcb.interview</groupId>
 	<artifactId>kcb</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>kcb</name>
 	<description>KCB Interview Project</description>
 	<url/>
@@ -107,6 +107,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>kcb-payment-service</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
